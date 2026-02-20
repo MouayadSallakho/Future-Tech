@@ -27,12 +27,9 @@ body {
   background-image: url("../images/background_Login.png");
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-position: center; */
-
   font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
-/* overlay (better contrast) */
 body::after {
   content: "";
   position: absolute;
@@ -44,7 +41,6 @@ body::after {
   background-color: #0b0d10d2;
 }
 
-/* everything above overlay */
 .login-page {
   position: relative;
   z-index: 1;
@@ -62,7 +58,7 @@ body::after {
   box-shadow: var(--shadow);
 }
 
-/* headings */
+
 .login-card h2 {
   margin: 0;
   color: var(--text-0);
@@ -81,13 +77,13 @@ body::after {
   text-align: center;
 }
 
-/* labels */
+
 .login-card label {
   color: var(--text-1);
   font-size: 14px;
 }
 
-/* inputs */
+
 .login-card .form-control {
   background: rgba(20, 20, 20, 0.78);
   border: 1px solid rgba(255, 255, 255, 0.10);
@@ -101,7 +97,7 @@ body::after {
   color: rgba(185, 188, 195, 0.55);
 }
 
-/* focus (professional) */
+
 .login-card .form-control:focus {
   border-color: rgba(255, 209, 26, 0.65);
   box-shadow: 0 0 0 0.2rem rgba(255, 209, 26, 0.12);
@@ -109,7 +105,7 @@ body::after {
   color: var(--text-0);
 }
 
-/* password wrap */
+
 .password-wrap {
   position: relative;
 }
@@ -142,7 +138,7 @@ body::after {
   color: var(--main-color);
 }
 
-/* primary button */
+
 .btn-login {
   background: var(--main-color);
   color: #0b0d10;
@@ -161,7 +157,7 @@ body::after {
   transform: translateY(-2px);
 }
 
-/* divider line with text */
+
 .other-login .hr {
   position: relative;
   margin: 14px 0 18px;
@@ -187,7 +183,6 @@ body::after {
   color: rgba(185, 188, 195, 0.65);
   font-size: 13.5px;
 }
-
 /* social buttons */
 .btn-social {
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -207,7 +202,7 @@ body::after {
   transform: translateY(-2px);
 }
 
-/* icon colors */
+
 .btn-social .fa-google {
   color: #4285f4;
 }
@@ -216,7 +211,7 @@ body::after {
   color: #0a66c2;
 }
 
-/* signup link */
+
 .signup-link {
   color: var(--main-color);
   text-decoration: none;
@@ -227,7 +222,7 @@ body::after {
   color: #ffe279;
 }
 
-/* small responsive improvement */
+
 @media (max-width: 576px) {
   .login-card {
     padding: 22px;
